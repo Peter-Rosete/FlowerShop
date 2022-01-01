@@ -1,0 +1,38 @@
+.Template{
+    align-items: center;
+    align-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    background-color: lightgray;
+    border-bottom: black solid 1px;
+}
+
+.logo{
+    flex: 1;
+    font-size: 48px;
+    display: flex;
+    width: 50%;
+    align-items: space-evenly;
+    font-family: Impact;
+}
+
+.socialMedia{
+    align-items: center;
+    align-content: space-evenly;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    display:flex;
+    flex-direction: row;
+}
+
+.socialMedia a {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: Impact;
+    
+}
