@@ -6,13 +6,12 @@
     flex-direction: row;
     justify-content: center;
     height: auto;
-    background-color: lightgray;
     border-bottom: black solid 1px;
 }
 
 .logo{
     flex: 1;
-    font-size: 48px;
+    font-size: 3em;
     display: flex;
     width: 50%;
     align-items: space-evenly;
@@ -25,7 +24,6 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    
     display:flex;
     flex-direction: row;
 }
@@ -35,4 +33,68 @@
     padding-right: 20%;
     font-family: Impact;
     
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-image: url('images/rose.jpg');
+    text-align: center;
+}
+
+.wallpaper-header{
+    color: #fff;
+     font-size: 3.5em;
+     text-shadow: 2px 2px black;
+}
+
+.wallpaper-p{
+    color: #fff;
+    text-shadow: 3px 3px black;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 39px;
+}
+
+.main img{
+    width: 100%;
+    position: absolute;
+    top: -250px;
+    font-style: Colombo;
+}
+
+.flower-display{
+    
+    padding: 1%;   
+}
+
+
+.ul-conainter ul li{
+    height: 250px;    
+    text-decoration: none;
+}
+
+.flower-display li{
+    width: 20%;
+    list-style: none;
+    border: 3px solid #ccc;
+    float: left;
+    padding: 1%;
+    margin:  1%;
+}
+
+.img-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
 }
