@@ -32,7 +32,6 @@
     padding-left: 20%;
     padding-right: 20%;
     font-family: Impact;
-    
 }
 
 .main{
@@ -40,7 +39,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    height: 400px;
+    height: 600px;
     background-image: url('images/rose.jpg');
     text-align: center;
 }
@@ -70,10 +69,12 @@
 }
 
 .flower-display{
-    
     padding: 1%;   
 }
 
+.ul-container{
+    border-top: 3px solid yellow;
+}
 
 .ul-conainter ul li{
     height: 250px;    
@@ -97,4 +98,21 @@
 .img-container img{
     width: 100%;
     height: auto;
+}
+
+.directions{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.normal-p{
+    color: #fff;
+    text-shadow: 1px 1px black;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 39px;
+    text-align: center
 }
