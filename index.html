@@ -45,60 +45,67 @@
   <div class="ul-container">
     <ul class="flower-display">
       <li>
+
         <div class="img-container">
-           <img src="images/wreath.jpg">
+           <img class="myImages" id="myImg" src="images/wreath.jpg">
+      </div>
+
+      <div id="myModal" class="modal">
+       <span class="close">&times;</span>
+       <img class="modal-content" id="img01">
+       <div id="caption"></div>
+    </div>
+        <h3>Wreath $75 - $175</h3>
+        <p>Mixed + Roses</p>
+      </li>
+      <li>
+        <div class="img-container">
+           <img class="myImages" id="myImg" src="images/wreath2.jpg">
       </div>
         <h3>Wreath $75 - $175</h3>
-        <p>Wreath, All White, (Mixed + Roses)</p>
+        <p>Mixed, with ribbon and side peice</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/wreath2.jpg">
+           <img class="myImages" id="myImg" src="images/heart2.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Heart $70 - $175</h3>
+        <p>Heart, mixed, with rose side peice</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/heart2.jpg">
+           <img class="myImages" id="myImg" src="images/wreath3.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Wreath $75 - $175</h3>
+        <p>Wreath, Mixed with Roses</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/wreath3.jpg">
+           <img class="myImages" id="myImg" src="images/cross.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Cross $75 - $200</h3>
+        <p>Mixed, with roses</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/cross.jpg">
+           <img class="myImages" id="myImg" src="images/basket2.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Basket $30 - $100</h3>
+        <p>Mixed + Roses</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/basket2.jpg">
+           <img class="myImages" id="myImg" src="images/heart.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Heart $75 - $200</h3>
+        <p>Mixed, with Rose center piece</p>
       </li>
       <li>
         <div class="img-container">
-           <img src="images/heart.jpg">
+           <img class="myImages" id="myImg" src="images/heart3.jpg">
       </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img src="images/heart3.jpg">
-      </div>
-        <h3>Wreath</h3>
-        <p>Wreath, All White, Mixed</p>
+        <h3>Heart $75 - $200</h3>
+        <p>Mixed</p>
       </li>
     </ul>
   </div>
@@ -110,7 +117,7 @@
   <div class="directions-child">
     <div class=info>
       <h2 class="directions-header">Hours of Operation (Fall/Spring)</h2>
-
+      <div class="space" style="clear: none;"></div>
     <p  class="directions-p">
        Friday - Wednesday<br>
         8:00am - 5:00pm<br>
@@ -122,9 +129,37 @@
   </div>
 
   <div class="directions-child">
-    <img src="images/directions.png" style="width:80%;border:4px solid green">
+    <img class="directions-image" src="images/directions.png" style="width:80%;border:4px solid green">
   </div>
 </div>
+<script>
 
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
 </body>
 </html>
