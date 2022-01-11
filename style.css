@@ -164,10 +164,10 @@ h3{
 .directions-p{
     color: green;
     text-shadow: 1px 1px black;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 24px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
     font-weight: 800;
     line-height: 39px;
 }
@@ -244,12 +244,39 @@ h3{
     .modal-content {
         width: 100%;
     }
+    .flower-display li{
+        width: 30%;
+    }
 } 
 
 @media only screen and (max-width: 1269px){
     .main{
         height: 700px;
+    }  
+    .flower-display li{
+        width: 40%;
+        height: 450px; 
     }
+    .directions-child{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .directions-parent{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1600px){
+    .main{
+        height: 580px;
+    }  
+    
 }
 
 @media only screen and (max-width: 800px){
