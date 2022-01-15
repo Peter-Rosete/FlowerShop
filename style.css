@@ -331,3 +331,14 @@ h3{
         height: 450px;
     }
 }
+
+@media only screen and (min-width: 961px) and (max-width: 1271px){
+    .flower-display li{
+        height: 700px;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 596px){
+    .main{
+        height: 1000px;
+    }
+}
