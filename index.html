@@ -1,167 +1,100 @@
 <!DOCTYPE html>
+
 <html>
 
     <head>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title> Auto filter search</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
 
-    <header class="Template">
-    
-      <div class="logo">
-        Cruz Flowers
-      </div>
-
-      <div class="socialMedia">
-        <a href="">Instagram</a>
-        <a href="https://www.facebook.com/cruzIpatzi/">Facebook</a>
-      </div>
-      </header>
-<body>
-
-  <div class="main">
-
-    <h2  class="wallpaper-header">Cruz Flower Arrangements</h2>
-
-  <p class="wallpaper-p">We make and <span style="text-decoration: underline;">deliver</span> arrangements all over Ventura County for all 
-    occasions and can be customized in multiple ways, call and schedule an appointment to talk
-    with one of our skilled flourist.Already know what you want? Call and order. We offer flowers 
-    for any occasions such as weddings, quinceaneras, anniversaries, valentines, mothers day and more!
-  </p>
-    
-    <p class="wallpaper-p">
-      Have questions, call now!
-    </p>
-    <p  class="wallpaper-p">
-      Phone Number: (805)-462-7693
-    </p>
-    <p class="wallpaper-p">
-      Directions: 2370 N H St, Oxnard, CA 93036<br>
-      Located in the center of the Santa Clara Cemetery.
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-  </div>
-  <div class="ul-container">
-    <ul class="flower-display">
-      <li>
-
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/wreath.jpg">
-      </div>
-
-      <div id="myModal" class="modal">
-       <span class="close">&times;</span>
-       <img class="modal-content" id="img01">
-       <div id="caption"></div>
+    <!--Header Tag-->
+    <div class="header">
+        <p class="company_name">Cruz Flowers</p>
+        <p>
+            <span>805-204-8702</span>
+            <a href="https://goo.gl/maps/GEkC7mfYzhJTP3WGA">Directions</a>
+        </p>
     </div>
-        <h3>Wreath $75 - $200</h3>
-        <p>Mixed + Roses</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/wreath2.jpg">
-      </div>
-        <h3>Wreath $75 - $200</h3>
-        <p>Mixed, with ribbon and side peice</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/heart2.jpg">
-      </div>
-        <h3>Heart $70 - $175</h3>
-        <p>Heart, mixed, with rose side peice</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/wreath3.jpg">
-      </div>
-        <h3>Wreath $75 - $200</h3>
-        <p>Wreath, Mixed with Roses</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/cross.jpg">
-      </div>
-        <h3>Cross $75 - $200</h3>
-        <p>Mixed, with Rose Center-Peice</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/basket2.jpg">
-      </div>
-        <h3>Basket $30 - $100</h3>
-        <p>Mixed + Roses</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/heart.jpg">
-      </div>
-        <h3>Heart $75 - $200</h3>
-        <p>Mixed</p>
-      </li>
-      <li>
-        <div class="img-container">
-           <img class="myImages" id="myImg" src="images/heart3.jpg">
-      </div>
-        <h3>Heart $75 - $200</h3>
-        <p>Mixed</p>
-      </li>
-    </ul>
-  </div>
 
-  <div style="clear: both;"></div>
+    <!--Banner-->
+    <div class="banner">
+        <h1>Cruz Flowers</h1>
+        <p>Best Family Owned Flower Shop in Ventura County</p>
 
-<div class="directions-parent">
-
-  <div class="directions-child">
-    <div class=info>
-      <h2 class="directions-header">Hours of Operation (Fall/Spring)</h2>
-      <div class="space" style="clear: none;"></div>
-    <p  class="directions-p">
-       Friday - Wednesday<br>
-        8:00am - 5:00pm<br>
-        Thursday<br>
-        2:00pm - 5:00pm<br>
-        <br>
-        Address: 2370 N H St, Oxnard, CA 93036<br>
-        Located in the center of the Santa Clara Cemetery.
-    </p>
+        <h1>Hours</h1>
+        <p>Friday - Tuesday: 8:00am - 5:00pm</p>
+        <p>Thursday: 2:00pm - 5:00pm</p>
     </div>
-  </div>
 
-  <div class="directions-child">
-    <img class="directions-image" src="images/directions.png" style="width:80%;border:4px solid green">
-  </div>
-</div>
-<script>
+    <!--Go go other Page-->
+    <body>
+        <a href="search.html">Search through catalog</a>
 
-// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('myImages');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
+        <div class="showcase">
+            <h1>Best Sellers</h1>
 
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
+            <ul id="myUL">
 
-var span = document.getElementsByClassName("close")[0];
+                <li>
+                    <img onclick="galleryFunction1(this)" id="source-img" src="./Updated_Photos/large_cross_red_center_rosees.JPG">
+                    <p href="#">Agnes</p>
+                </li>
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+                <li>
+                    <img onclick="galleryFunction1(this)" src="./Updated_Photos/white_large_wreath_fanvy.JPG" type="image">
+                    <p href="#">Adele</p>
+                </li>
 
-</script>
-</body>
+                <li>
+                    <img onclick="galleryFunction1(this)" src="./Updated_Photos/white_XLarge_wreath_center.JPG" type="image">
+                    <p href="#">Adele</p>
+                </li>
+
+                <li>
+                    <img onclick="galleryFunction1(this)" id="source-img" src="./Updated_Photos/XLarge_white_red_heart.JPG">
+                    <p href="#">Adele Agnes</p>
+                </li>
+
+                <li>
+                    <img onclick="galleryFunction1(this)" src="./Updated_Photos/basket_XLarge.JPG" type="image">
+                    <p href="#">Premium XLarge Basket</p>
+                </li>
+
+                <li>
+                    <img onclick="galleryFunction1(this)" id="source-img" src="./Updated_Photos/Cross_white_XLarge_center.JPG">
+                    <p href="#">Agnes</p>
+                </li>
+
+                <li>
+                    <img onclick="galleryFunction1(this)" id="source-img" src="./Updated_Photos/Large_wreath_center.JPG">
+                    <p href="#">Agnes</p>
+                </li>
+
+                <li>
+                    <img onclick="galleryFunction1(this)" src="./Updated_Photos/small_heart_center.JPG" type="image">
+                    <p href="#">Adele</p>
+                </li>
+
+            </ul>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img src="" id="modal-image" />
+                </div>
+            </div>
+
+            <div class="footer">
+                <h1>Located at the Center of the Santa Clara Cemetery</h1>
+                <img>
+                <a><img src="./Updated_Photos/Flowershop_map.png"></a>
+
+            </div>
+            
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+
 </html>
