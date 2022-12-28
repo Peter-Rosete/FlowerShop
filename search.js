@@ -69,6 +69,7 @@ input2.addEventListener("keypress", function (event) {
     filterArray = filter.split(" ");
     ul = document.getElementById('myUL');
     li = document.getElementsByTagName('li');
+    console.log("This is the list item " + li);
 
     if (event.key === "Enter") {
 
@@ -109,6 +110,10 @@ console.log(modal);
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var modalImage = document.getElementById("modal-image");
+
+//Change the text information
+var modalparagraph = document.getElementsByClassName("modal-paragraph");
+console.log(modalparagraph);
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
