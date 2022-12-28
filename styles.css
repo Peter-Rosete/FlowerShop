@@ -89,6 +89,13 @@ h1 {
     max-width: 700px;
 }
 
+.banner p span {
+    margin-top: 25px;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .banner a {
     display: inline-block;
     margin-top: 20px;
@@ -101,7 +108,9 @@ h1 {
     padding: 0 10%;
 }
 
-.showcase h1 {}
+.showcase h1 {
+    font-size: 55px;
+}
 
 .banner:before {
     content: '';
@@ -326,6 +335,10 @@ input#add:hover,
 
 @media only screen and (max-width: 1400px) {
 
+    .banner {
+        padding-top: 70px;
+    }
+
     .location_images {
         flex-wrap: wrap;
     }
@@ -411,11 +424,25 @@ input#add:hover,
 
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .modal-content {
+        width: 65%;
+        padding: 0 10px 0px;
+        top: 23%;
+    }
+    
+}
+
 @media only screen and (max-width: 450px) {
 
     #myUL li {
         height: 400px;
         width: 100%;
+    }
+
+    .showcase h1 {
+        font-size: 40px;
     }
 
 }
